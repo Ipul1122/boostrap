@@ -1,0 +1,52 @@
+/* Container untuk paragraf */
+p {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Memastikan teks tidak keluar dari container */
+}
+
+/* Style untuk setiap huruf */
+p span {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.1em; /* Adjust the spacing as needed */
+  animation: jump 0.5s ease-in-out infinite alternate;
+}
+
+.animated-text span {
+  display: inline-block;
+  margin-right: 0.1em; /* Adjust the spacing as needed */
+  animation: jump 0.5s ease infinite;
+}
+
+
+h1 {
+    text-shadow: 2px 2px 8px #000000;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  #h1-cerita{
+  text-shadow: 2px 2px 8px #ffffff;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  
+}
+
+/* Animasi lompat untuk setiap huruf */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
