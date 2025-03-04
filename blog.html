@@ -1,68 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kampanye</title>
+    <link rel="stylesheet" href="css/kampanye.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
+    <!-- GOOGLE FONT API -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  </head>
+  <body id="kampanyeBody" style="background-image: url('./image/kampanye/anak-anak.png')">
     <!-- Navbar Template -->
     <div id="navbar"></div>
 
-    <!-- Blog Content -->
-    <div class="container my-5 pt-5" >
-        <h2 class="text-center mb-4">Blog Lingkungan Yogyakarta</h2>
-        <div class="row">
-            
-            <!-- Blog 1 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="image/blog/dampak-sampah.png" class="card-img-top" alt="Sampah di Laut">
-                    <div class="card-body">
-                        <h5 class="card-title">Dampak Sampah terhadap Lingkungan Lautan di Yogyakarta</h5>
-                        <p class="card-text">Sampah plastik dan limbah rumah tangga yang mencemari lautan Yogyakarta dapat membahayakan ekosistem laut...</p>
-                        <a href="https://kumparan.com/laila-wan/yogyakarta-darurat-sampah-apa-efek-bagi-kesehatan-22toBglomwW" target="_blank" class="btn btn-primary">Baca Selengkapnya</a>
-                    </div>
-                </div>
+    <!-- <h1 class="mt-5">Aksi Kampanye untuk melindungi lautan</h1> -->
+
+    <section class="container my-5">
+      <h2 class="text-center my-3 py-3 text-light">Kampanye Pencemaran Lautan</h2>
+      <div id="kampanyeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bg="anak-anak.png">
+            <img src="image/kampanye/anak-anak.png" class="d-block w-100" alt="Edukasi Anak-anak" />
+            <div class="carousel-caption d-block bg-dark bg-opacity-50 p-3 rounded">
+              <h5>Edukasi Anak-anak</h5>
+              <p>Mengajarkan anak-anak tentang bahaya sampah plastik di lautan dan pentingnya menjaga lingkungan.</p>
             </div>
-            
-            <!-- Blog 2 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="image/blog/edukasi-buang-sampah.png" class="card-img-top" alt="Edukasi Buang Sampah">
-                    <div class="card-body">
-                        <h5 class="card-title">Edukasi Buang Sampah kepada Masyarakat Yogyakarta</h5>
-                        <p class="card-text">Kesadaran masyarakat dalam membuang sampah masih menjadi tantangan. Program edukasi berperan penting dalam...</p>
-                        <a href="https://dprd.jogjakota.go.id/detail/index/27637" class="btn btn-primary">Baca Selengkapnya</a>
-                    </div>
-                </div>
+          </div>
+          <div class="carousel-item" data-bg="masyarakat-pesisir-pantai.png">
+            <img src="image/kampanye/masyarakat-pesisir-pantai.png" class="d-block w-100" alt="Masyarakat Pesisir" />
+            <div class="carousel-caption d-block bg-dark bg-opacity-50 p-3 rounded">
+              <h5>Masyarakat Pesisir</h5>
+              <p>Membantu masyarakat pesisir memahami dampak pencemaran laut terhadap kehidupan mereka.</p>
             </div>
-            
-            <!-- Blog 3 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="image/blog/kearifan-yogyakarta.png" class="card-img-top" alt="Kearifan Lokal">
-                    <div class="card-body">
-                        <h5 class="card-title">Kearifan Yogyakarta yang Tergerus oleh Sampah</h5>
-                        <p class="card-text">Budaya dan kearifan lokal Yogyakarta mulai tergerus oleh tingginya volume sampah. Langkah-langkah pelestarian diperlukan...</p>
-                        <a href="https://www.panggungharjo.desa.id/gusti-marel-kebersamaan-dan-kearifan-lokal-kunci-untuk-mengatasi-masalah-sampah/" class="btn btn-primary">Baca Selengkapnya</a>
-                    </div>
-                </div>
+          </div>
+          <div class="carousel-item" data-bg="kampanye.png">
+            <img src="image/kampanye/kampanye.png" class="d-block w-100" alt="Aksi Kampanye" />
+            <div class="carousel-caption d-block bg-dark bg-opacity-50 p-3 rounded">
+              <h5>Aksi Kampanye Pecinta Alam</h5>
+              <p>Melibatkan pecinta alam dalam kegiatan pembersihan pantai dan penyuluhan lingkungan.</p>
             </div>
-            
+          </div>
+          <div class="carousel-item" data-bg="turis.png">
+            <img src="image/kampanye/turis.png" class="d-block w-100" alt="Turis di Pantai" />
+            <div class="carousel-caption d-block bg-dark bg-opacity-50 p-3 rounded">
+              <h5>Turis di Pantai</h5>
+              <p>Mengajak wisatawan untuk tidak membuang sampah sembarangan dan peduli terhadap kebersihan pantai.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bg="pemerintah.png">
+            <img src="image/kampanye/pemerintah.png" class="d-block w-100" alt="Aksi Pemerintah" />
+            <div class="carousel-caption d-block bg-dark bg-opacity-50 p-3 rounded">
+              <h5>Aksi Pemerintah</h5>
+              <p>Mendukung kebijakan pemerintah dalam mengurangi pencemaran laut dengan regulasi yang ketat.</p>
+            </div>
+          </div>
         </div>
-    </div>
-
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#kampanyeCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#kampanyeCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
     <!-- Footer Template -->
     <div id="footerContainer"></div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/footer.js"></script>
-</body>
+
+    <script src="./js/kampanye.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/footer.js"></script>
+  </body>
 </html>
